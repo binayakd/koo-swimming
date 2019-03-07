@@ -1,0 +1,4 @@
+FROM maven:3.6.0-jdk-8-alpine
+COPY ./pom.xml /usr/src/app/pom.xml
+WORKDIR /usr/src/app
+RUN mvn dependency:go-offline -B

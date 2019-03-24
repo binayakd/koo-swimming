@@ -1,30 +1,18 @@
-package com.bintech.kooswimming.entriy;
+package com.bintech.kooswimming.dto;
 
-import org.dizitart.no2.IndexType;
-import org.dizitart.no2.objects.Index;
-import org.dizitart.no2.objects.Indices;
-
-@Indices({
-        @Index(value = "email", type = IndexType.Unique),
-        @Index(value = "name", type = IndexType.Unique)
-})
-
-public class SignUp{
+public class SignUpDto {
 
     private String name;
     private String address;
     private String postalCode;
     private String email;
 
-    public SignUp(String name, String address, String postalCode, String email) {
+    public SignUpDto(String name, String address, String postalCode, String email) {
         this.name = name;
         this.address = address;
         this.postalCode = postalCode;
         this.email = email;
     }
-
-    public SignUp() {}
-
 
     public String getName() {
         return name;

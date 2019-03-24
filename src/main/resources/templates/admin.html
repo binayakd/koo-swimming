@@ -21,7 +21,6 @@
            <table class="table">
                <thead>
                    <tr>
-                       <th scope="col">Id</th>
                        <th scope="col">Name</th>
                        <th scope="col">Address</th>
                        <th scope="col">Postal Code</th>
@@ -30,7 +29,6 @@
                </thead>
                <tbody>
                    <tr th:each="signUp: ${signUpList}">
-                       <td th:text="${signUp.id}" scope="row"/>
                        <td th:text="${signUp.name}" />
                        <td th:text="${signUp.address}" />
                        <td th:text="${signUp.postalCode}" />

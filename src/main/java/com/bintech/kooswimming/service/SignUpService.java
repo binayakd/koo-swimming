@@ -16,7 +16,7 @@ import java.util.List;
 public class SignUpService {
 
     @Autowired
-    private ObjectRepository<SignUp> signUpRepository;
+    ObjectRepository<SignUp> signUpRepository;
 
     public List<Long> createSignUp(SignUp signUp) {
         List<Long> idList = new ArrayList<>();
